@@ -2,7 +2,7 @@ from flask import Flask, session
 app = Flask(__name__)
 
 import settings_local
-from parse_rest.connection import SessionToken, register
+from parse_rest.connection import *
 from parse_rest.user import User
 import process_user
 

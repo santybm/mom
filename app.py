@@ -19,10 +19,10 @@ def hello():
 
 @app.route('/register')
 def uregister():
-    username = "demo1"
+    username = "demo5"
     password = "abcd123"
     u = process_user.signup(username, password)
-    session['token'] = u
+    session['token'] = u.session_header()['X-Parse-Session-Token']
 
     return u.username
 
@@ -32,7 +32,7 @@ def ulogin():
     username = 'demo'
     password = "abcd123"
     u = process_user.login(username, password)
-    session['token'] = u
+    session['token'] = u.session_header()['X-Parse-Session-Token']
 
 
     return u.objectId

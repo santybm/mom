@@ -10,7 +10,7 @@ def signup(username, password):
         u = User.signup(username, password)
     except:
         return "User Already Exists"
-    return u.sessionToken.token
+    return u
 
 
 def login(username, password):
@@ -18,7 +18,7 @@ def login(username, password):
         u = User.login(username, password)
     except:
         return "Error: User login failed"
-    return u.sessionToken.token
+    return u
 
 def logout():
     try:

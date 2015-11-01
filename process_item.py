@@ -1,9 +1,9 @@
 __author__ = 'Herb'
 from business.Item import Item
 
-def saveItem(name, description, price, store):
+def saveItem(name, description, price, store, quantity, unitPrice):
 
-    item = Item(Name=name, Description=description, Price=price, Store = store)
+    item = Item(Name=name, Description=description, Price=price, Store = store, Quantity=quantity, UnitPrice= unitPrice)
     item.save()
     return item
 
@@ -11,7 +11,7 @@ def getItemById(id):
     item = Item.Query.get(objectId=id)
     return item
 
-def updateItem(id, name, description, price, store):
+def updateItem(id, name, description, price, store, quantity, unitPrice):
 
     if (id is not None):
         item = Item.Query.get(objectId = id)
@@ -23,7 +23,10 @@ def updateItem(id, name, description, price, store):
             item.Price = price
         if (store is not None):
             item.Store = store
-
+        if (quantity is not None):
+            item.Quantity = quantity
+        if (unitPrice is not None):
+            item.UnitPrice = unitPrice
         item.save()
         return item
     else:

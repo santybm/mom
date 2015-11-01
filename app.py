@@ -86,10 +86,12 @@ def addStore():
 @app.route('/item')
 def addItem():
 
-    homeStore = process_store.getStore("Nike")
-    id = process_item.saveItem(name="Tequila", description="How bad bitches drown their sorrows", price = 10, store=homeStore)
-
-    return id
+    try:
+        homeStore = process_store.getStoreByName("Nike").get()
+        id = process_item.saveItem(name="Tequila", description="Amarga", price = 10, store=homeStore, quantity = 4, unitPrice= 3.99)
+    except Exception as es:
+        print es
+    return id.objectId
 
 @app.route('/removeitemCart')
 def rmCartItem():

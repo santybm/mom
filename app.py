@@ -8,6 +8,8 @@ import process_user
 import process_store
 import process_item
 from process_store import Store
+from business.Item import *
+from business.ShoppingCart import *
 
 
 
@@ -25,7 +27,7 @@ def hello():
 
 @app.route('/register')
 def uregister():
-    username = "demo7"
+    username = "demo77"
     password = "abcd123"
     u = process_user.signup(username, password)
     if u != 'User Already Exists':
@@ -36,7 +38,7 @@ def uregister():
 
 @app.route('/login')
 def ulogin():
-    username = 'demo5'
+    username = 'demo6'
     password = "abcd123"
     u = process_user.login(username, password)
     session['token'] = u.session_header()['X-Parse-Session-Token']
@@ -55,8 +57,6 @@ def ulogout():
 
 @app.route('/addToCart')
 def addCart():
-
-    from business.Item import getItem
     itemToAdd = getItem("Slim Milk")
 
     #Is user logged in?
@@ -64,15 +64,12 @@ def addCart():
         register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY, session_token=session['token'])
         try:
             currentUser = process_user.User.current_user()
+            #currentUser = process_user.User.Query.get(objectID=currentUser)
         except Exception as exp:
             return exp.message
+        cart = currentUser.shoppingCart
+        addItemtoCart(cart, itemToAdd)
 
-        ### POST - add item to cart ###
-        if currentUser.shoppingCart is not None:
-            print "y"
-        else:
-            ## create new shopping cart and add item
-            pass
 
         return "User Logged in"
 

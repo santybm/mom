@@ -1,4 +1,4 @@
-from flask import Flask, session
+from flask import Flask, session, render_template, request
 app = Flask(__name__)
 
 import settings_local
@@ -20,7 +20,7 @@ currentUser = None
 
 @app.route('/')
 def hello():
-    return "Hello World"
+    return render_template('login.html')
 
 
 ### USER ROUTES ###
@@ -36,15 +36,24 @@ def uregister():
     return "Can not register user"
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def ulogin():
-    username = 'demo6'
-    password = "abcd123"
-    u = process_user.login(username, password)
-    session['token'] = u.session_header()['X-Parse-Session-Token']
+    if request.method == 'GET':
+        username = 'demo6'
+        password = "abcd123"
+    if request.method == 'POST':
+        username = request.form['inputEmail']
+        password = request.form['inputPassword']
 
-
-    return u.objectId
+    if username and password:
+        u = process_user.login(username, password)
+        if u != 'Error: User login failed':
+            session['token'] = u.session_header()['X-Parse-Session-Token']
+            return redirect("search.html")
+        else:
+            return u
+    else:
+        return "Error"
 
 @app.route('/logout')
 def ulogout():
@@ -54,6 +63,18 @@ def ulogout():
 
 
 ### GROCERY CART ###
+
+@app.route('listPage')
+def getCart():
+    #Is user logged in?
+    if 'token' in session and session['token'] is not None:
+        register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY, session_token=session['token'])
+        try:
+            currentUser = process_user.User.current_user()
+            #currentUser = process_user.User.Query.get(objectID=currentUser)
+        except Exception as exp:
+            return exp.message
+        cart = currentUser.shoppingCart
 
 @app.route('/addToCart')
 def addCart():

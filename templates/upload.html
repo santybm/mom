@@ -21,6 +21,7 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
+	<link rel="stylesheet" type="text/css" href="http://moro.es/frontend/projects/jquery-nicefileinput-js.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
@@ -45,10 +46,6 @@
                     </li>
                 </ul>
             </div>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
     </nav>
 
     <div class = "header header-upload">
@@ -58,9 +55,10 @@
                 <hr class="light">
                 <h4 id="uploadDescription" style="font-size:20px; margin:30px">Upload a picture of your grocery store receipt.</h4>
                 <form id="upload" class="form-upload">
+					<!--
                     <div class="input-group ">
                        <div tabindex="500" class="form-control file-caption">
-                       <div class="file-caption-name"></div>
+                       <div id="fileName" class="file-caption-name"></div>
                     </div>
                         <div class="input-group-btn">
                             <button id="fileBTN" tabindex="500" class="btn btn-primary btn-file" onclick="chooseFile();">
@@ -69,13 +67,33 @@
                             <div style="height:0px;overflow:hidden">
                                 <input type="file" id="fileInput" name="fileInput" />
                             </div>
-                            <script>
-                                function chooseFile() {
-                                $("#fileInput").click();
-                                }
+                            <script type="application/javascript">
+								var wrapper = $('<div/>').css({height:0,width:0,'overflow':'hidden'});
+								var fileInput = $(':file').wrap(wrapper);
+
+								fileInput.change(function(){
+									$this = $(this);
+									$('#file').text($this.val());
+								})
+
+								$('#file').click(function(){
+									fileInput.click();
+								}).show();
                             </script>
                         </div>
-                    </div>
+                    </div> -->
+					<input id="uploadFile" class="upltext" placeholder="Choose File" disabled="disabled" />
+					<div class="fileUpload btn btn-primary">
+						<span>Browse</span> <input id="uploadBtn" type="file" class="upload" />
+					</div>
+					<br />
+					<input type="submit" class="upload" class="uploadBtn"/>
+					
+					<script type="application/javascript">
+						document.getElementById("uploadBtn").onchange = function () {
+							document.getElementById("uploadFile").value = this.value;
+						};
+					</script>
                 </form>
             </div>
         </div>
@@ -88,6 +106,8 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>

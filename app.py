@@ -7,6 +7,7 @@ from parse_rest.datatypes import GeoPoint
 import process_user
 import process_store
 import process_item
+from flask import request
 
 from business.Item import *
 from business.ShoppingCart import *
@@ -96,8 +97,18 @@ def addItem():
 @app.route('/removeitemCart')
 def rmCartItem():
     cart = currentUser.shoppingCart
-    itemToAdd = getItem("Slim Milk")
-    removeItemFromCart(cart, item)
+    item = process_item.getItemByName("Slim Milk").get()
+    removeItemFromCart(cart, item.get())
+    return "done"
+
+@app.route('/searchClosest')
+def searchItem():
+    zipcode = request.args.get('Zipcode')
+    radiusInMi = request.args.get('Radius')
+    Location = process_item.findItemNearestTo(Zipcode= zipcode, Radius =radiusInMi)
+    #Lat [0] Long [1]
+    #zip = str(Location[0]) + ":"+ str(Location[1])
+    return str(Location)
 
 if __name__ == '__main__':
     app.secret_key = 'A0Z=-(0a-/dfhg$%##@ew4rfwc[}{}>#@$>:SKF$%!'

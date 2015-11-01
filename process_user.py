@@ -1,7 +1,7 @@
 from parse_rest.user import User
 import settings_local
 
-from parse_rest.connection import SessionToken, register
+from parse_rest.connection import *
 register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY)
 
 

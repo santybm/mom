@@ -3,7 +3,12 @@ app = Flask(__name__)
 
 import settings_local
 from parse_rest.connection import *
+from parse_rest.datatypes import GeoPoint
 import process_user
+import process_store
+import process_item
+from process_store import Store
+
 
 
 register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY)
@@ -20,7 +25,7 @@ def hello():
 
 @app.route('/register')
 def uregister():
-    username = "demo5"
+    username = "demo7"
     password = "abcd123"
     u = process_user.signup(username, password)
     if u != 'User Already Exists':
@@ -65,7 +70,17 @@ def addCart():
         return "Not logged in"
 
 
+@app.route('/store')
+def addStore():
 
+    savedStore = process_store.saveStore(Name="Trader Joe's", Description="Basic hoe's shop at these Joes", LocationLat=12, LocationLon= -34, Type="")
+
+    return savedStore.objectId
+@app.route('/item')
+def addItem():
+    homeStore = Store.Query.get(Name= "Trader Joe's")
+    id = process_item.saveItem(Name="Tequila", Description="How bad bitches drown their sorrows", Store=homeStore, Price = 10)
+    return id
 
 
 

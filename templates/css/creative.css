@@ -59,10 +59,11 @@ p {
     background-color: #f05f40;
 }
 
-.bg-dark {
+.bg-light {
     color: #fff;
-    background-color: #222;
+    background-color: #fff;
     padding-bottom: 0px;
+    box-shadow: 0px 5px 5px #e0e0e0;
 }
 
 .text-faded {
@@ -184,12 +185,20 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background: 
+    /* top, transparent black to blue, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 2, 10, .20), 
+        rgba(0, 2, 10, .40)
+
+    ),
+    /* bottom, image */
+    url('../img/header.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;  
 }
 
 header .header-content {

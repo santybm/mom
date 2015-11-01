@@ -61,20 +61,22 @@
 
     <section class="bg-primary" id="about">
         <div class="container">
+            {% for item in itemsAr %}
             <div class="row" id="repeatableCell">
 					<div class="col-md-4" style="text-align: right;">
 						
 							<div>
-								{{ itemprice }} <a href="/removeItem?id={{itemcartID}}" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+								{{ item[0] }} <a href="/removeItem?id={{itemcartID}}" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
 							</div>
 					</div>
                 	<div class="col-md-8">
-							<div id="itemName">{{ itemName }}</div>
-							<div id="storeName">{{ itemStore }} </div>
-							<div id="itemDescription">{{ itemDescription }} </div>
+							<div id="itemName">{{ item[1] }}</div>
+							<div id="storeName">{{ item[2] }} </div>
+							<div id="itemDescription">{{ item[3] }} </div>
 							
 					</div>
             </div>
+            {% endfor %}
         </div>
     </section>
 

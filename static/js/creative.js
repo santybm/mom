@@ -41,6 +41,76 @@
             top: 100
         }
     })
+    
+    $(function(){
+        $('#searchButton').click(function(){
+            $('#searchButton').css({
+                'opacity': '1',
+                'height': '90px',
+                'width': '90px',
+                'border-radius': '90px'  
+            })
+            $('#groceryListButton').css({
+                'opacity': '0.5',
+                'height': '80px',
+                'width': '80px',
+                'border-radius': '80px'  
+            })
+                                                                $('#uploadButton').css({
+                'opacity': '0.5',
+                'height': '80px',
+                'width': '80px',
+                'border-radius': '80px'  
+            })
+        });
+    });
+    
+        $(function(){
+        $('#groceryListButton').click(function(){
+            $('#groceryListButton').css({
+                'opacity': '1',
+                'height': '90px',
+                'width': '90px',
+                'border-radius': '90px'  
+            })
+            $('#searchButton').css({
+                'opacity': '0.5',
+                'height': '80px',
+                'width': '80px',
+                'border-radius': '80px'  
+            })
+                                                                $('#uploadButton').css({
+                'opacity': '0.5',
+                'height': '80px',
+                'width': '80px',
+                'border-radius': '80px'  
+            })
+        });
+    });
+    
+        $(function(){
+        $('#uploadButton').click(function(){
+            $('#uploadButton').css({
+                'opacity': '1',
+                'height': '90px',
+                'width': '90px',
+                'border-radius': '90px'  
+            })
+                                                                $('#groceryListButton').css({
+                'opacity': '0.5',
+                'height': '80px',
+                'width': '80px',
+                'border-radius': '80px'  
+            })
+                                                                $('#searchButton').css({
+                'opacity': '0.5',
+                'height': '80px',
+                'width': '80px',
+                'border-radius': '80px'  
+            })
+        });
+    });
+    
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();

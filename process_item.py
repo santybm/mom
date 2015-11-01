@@ -55,6 +55,7 @@ def findItemNearestTo(Zipcode, Radius):
     LocationLatAndLong = getLongitudeAndLatitudeFromZipCode(Zipcode)
     latDegree = (float(Radius) / 177.77)
     y1 = LocationLatAndLong[0] + latDegree
+    
     y2 = LocationLatAndLong[0] - latDegree
     longitude1= LocationLatAndLong[1] + 177.77 * math.cos(y1)
     longitude2= LocationLatAndLong[1] + 177.77 * math.cos(y2)

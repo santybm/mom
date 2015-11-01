@@ -3,11 +3,17 @@ app = Flask(__name__)
 
 import settings_local
 from parse_rest.connection import *
-from parse_rest.user import User
+from parse_rest.datatypes import GeoPoint
 import process_user
+import process_store
+import process_item
+from process_store import Store
+
 
 
 register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY)
+
+currentUser = None
 
 
 @app.route('/')
@@ -19,17 +25,18 @@ def hello():
 
 @app.route('/register')
 def uregister():
-    username = "demo5"
+    username = "demo7"
     password = "abcd123"
     u = process_user.signup(username, password)
-    session['token'] = u.session_header()['X-Parse-Session-Token']
-
-    return u.username
+    if u != 'User Already Exists':
+        session['token'] = u.session_header()['X-Parse-Session-Token']
+        return u.username
+    return "Can not register user"
 
 
 @app.route('/login')
 def ulogin():
-    username = 'demo'
+    username = 'demo5'
     password = "abcd123"
     u = process_user.login(username, password)
     session['token'] = u.session_header()['X-Parse-Session-Token']
@@ -48,15 +55,32 @@ def ulogout():
 
 @app.route('/addToCart')
 def addCart():
-
     #Is user logged in?
-    if session['token']:
+    if 'token' in session and session['token'] is not None:
+        register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY, session_token=session['token'])
+        try:
+            currentUser = process_user.User.current_user()
+            
+        except Exception as exp:
+            return exp.message
+
         return "User Logged in"
+
     else:
         return "Not logged in"
 
 
+@app.route('/store')
+def addStore():
 
+    savedStore = process_store.saveStore(Name="Trader Joe's", Description="Basic hoe's shop at these Joes", LocationLat=12, LocationLon= -34, Type="")
+
+    return savedStore.objectId
+@app.route('/item')
+def addItem():
+    homeStore = Store.Query.get(Name= "Trader Joe's")
+    id = process_item.saveItem(Name="Tequila", Description="How bad bitches drown their sorrows", Store=homeStore, Price = 10)
+    return id
 
 
 

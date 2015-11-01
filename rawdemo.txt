@@ -1,0 +1,1088 @@
+{
+  "language": "en",
+  "textAngle": 0,
+  "orientation": "Up",
+  "regions": [
+    {
+      "boundingBox": "30,37,744,958",
+      "lines": [
+        {
+          "boundingBox": "114,37,467,94",
+          "words": [
+            {
+              "boundingBox": "114,37,467,94",
+              "text": "Walmart"
+            }
+          ]
+        },
+        {
+          "boundingBox": "124,143,466,40",
+          "words": [
+            {
+              "boundingBox": "124,143,85,31",
+              "text": "Save"
+            },
+            {
+              "boundingBox": "223,152,137,31",
+              "text": "money."
+            },
+            {
+              "boundingBox": "375,146,74,32",
+              "text": "Live"
+            },
+            {
+              "boundingBox": "462,145,128,34",
+              "text": "better."
+            }
+          ]
+        },
+        {
+          "boundingBox": "270,225,271,33",
+          "words": [
+            {
+              "boundingBox": "270,225,95,30",
+              "text": "(813)"
+            },
+            {
+              "boundingBox": "387,227,154,31",
+              "text": "932-0562"
+            }
+          ]
+        },
+        {
+          "boundingBox": "172,260,447,34",
+          "words": [
+            {
+              "boundingBox": "172,260,134,31",
+              "text": "Manager"
+            },
+            {
+              "boundingBox": "328,261,135,32",
+              "text": "COLLEEN"
+            },
+            {
+              "boundingBox": "485,263,134,31",
+              "text": "BRICKEY"
+            }
+          ]
+        },
+        {
+          "boundingBox": "230,296,349,33",
+          "words": [
+            {
+              "boundingBox": "230,296,75,29",
+              "text": "8885"
+            },
+            {
+              "boundingBox": "328,296,17,30",
+              "text": "N"
+            },
+            {
+              "boundingBox": "367,297,134,31",
+              "text": "FLORIDA"
+            },
+            {
+              "boundingBox": "523,299,56,30",
+              "text": "AVE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "386,332,154,31",
+          "words": [
+            {
+              "boundingBox": "386,332,36,30",
+              "text": "FL"
+            },
+            {
+              "boundingBox": "445,333,95,30",
+              "text": "33604"
+            }
+          ]
+        },
+        {
+          "boundingBox": "34,363,740,36",
+          "words": [
+            {
+              "boundingBox": "34,363,56,30",
+              "text": "STt"
+            },
+            {
+              "boundingBox": "112,364,70,29",
+              "text": "5221"
+            },
+            {
+              "boundingBox": "288,365,148,31",
+              "text": "00001061"
+            },
+            {
+              "boundingBox": "465,368,55,30",
+              "text": "TEt"
+            },
+            {
+              "boundingBox": "542,368,37,30",
+              "text": "06"
+            },
+            {
+              "boundingBox": "601,369,56,30",
+              "text": "TRt"
+            },
+            {
+              "boundingBox": "679,370,95,29",
+              "text": "05332"
+            }
+          ]
+        },
+        {
+          "boundingBox": "288,400,271,33",
+          "words": [
+            {
+              "boundingBox": "288,400,232,32",
+              "text": "007225003712"
+            },
+            {
+              "boundingBox": "542,402,17,31",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "288,435,270,33",
+          "words": [
+            {
+              "boundingBox": "288,435,232,32",
+              "text": "007225003712"
+            },
+            {
+              "boundingBox": "542,438,16,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "33,468,525,35",
+          "words": [
+            {
+              "boundingBox": "33,468,36,30",
+              "text": "GV"
+            },
+            {
+              "boundingBox": "91,469,56,29",
+              "text": "PNT"
+            },
+            {
+              "boundingBox": "170,469,95,30",
+              "text": "BUTTR"
+            },
+            {
+              "boundingBox": "287,470,232,32",
+              "text": "007874237003"
+            },
+            {
+              "boundingBox": "541,473,17,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "33,503,525,35",
+          "words": [
+            {
+              "boundingBox": "33,503,36,30",
+              "text": "GV"
+            },
+            {
+              "boundingBox": "91,504,56,30",
+              "text": "PNT"
+            },
+            {
+              "boundingBox": "169,505,96,30",
+              "text": "BUTTR"
+            },
+            {
+              "boundingBox": "287,506,232,31",
+              "text": "007874237003"
+            },
+            {
+              "boundingBox": "541,508,17,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "32,539,526,34",
+          "words": [
+            {
+              "boundingBox": "32,539,37,28",
+              "text": "GV"
+            },
+            {
+              "boundingBox": "91,539,56,30",
+              "text": "PNT"
+            },
+            {
+              "boundingBox": "169,540,95,30",
+              "text": "BUTTR"
+            },
+            {
+              "boundingBox": "286,540,232,32",
+              "text": "007874237003"
+            },
+            {
+              "boundingBox": "540,543,18,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "32,573,525,35",
+          "words": [
+            {
+              "boundingBox": "32,573,36,30",
+              "text": "GV"
+            },
+            {
+              "boundingBox": "91,574,55,29",
+              "text": "PNT"
+            },
+            {
+              "boundingBox": "169,575,95,29",
+              "text": "BUTTR"
+            },
+            {
+              "boundingBox": "286,575,232,32",
+              "text": "007874237003"
+            },
+            {
+              "boundingBox": "540,578,17,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "31,608,526,36",
+          "words": [
+            {
+              "boundingBox": "31,608,37,30",
+              "text": "GV"
+            },
+            {
+              "boundingBox": "190,610,74,30",
+              "text": "160Z"
+            },
+            {
+              "boundingBox": "286,611,232,32",
+              "text": "007874201510"
+            },
+            {
+              "boundingBox": "540,614,17,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "31,644,525,35",
+          "words": [
+            {
+              "boundingBox": "31,644,36,30",
+              "text": "GV"
+            },
+            {
+              "boundingBox": "90,644,75,31",
+              "text": "CHNK"
+            },
+            {
+              "boundingBox": "188,645,75,31",
+              "text": "CHKN"
+            },
+            {
+              "boundingBox": "286,646,231,33",
+              "text": "007874206784"
+            },
+            {
+              "boundingBox": "539,649,17,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "30,679,526,35",
+          "words": [
+            {
+              "boundingBox": "30,679,37,31",
+              "text": "GV"
+            },
+            {
+              "boundingBox": "89,680,76,30",
+              "text": "CHNK"
+            },
+            {
+              "boundingBox": "187,681,76,30",
+              "text": "CHKN"
+            },
+            {
+              "boundingBox": "285,682,232,32",
+              "text": "007874206784"
+            },
+            {
+              "boundingBox": "539,684,17,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "32,715,484,35",
+          "words": [
+            {
+              "boundingBox": "32,715,35,30",
+              "text": "12"
+            },
+            {
+              "boundingBox": "89,716,36,30",
+              "text": "CT"
+            },
+            {
+              "boundingBox": "148,716,114,31",
+              "text": "NITRIL"
+            },
+            {
+              "boundingBox": "284,717,232,33",
+              "text": "073191913822"
+            }
+          ]
+        },
+        {
+          "boundingBox": "284,753,271,32",
+          "words": [
+            {
+              "boundingBox": "284,753,232,32",
+              "text": "002550000377"
+            },
+            {
+              "boundingBox": "538,756,17,29",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "284,788,271,33",
+          "words": [
+            {
+              "boundingBox": "284,788,232,33",
+              "text": "007874222682"
+            },
+            {
+              "boundingBox": "538,791,17,30",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "283,823,271,32",
+          "words": [
+            {
+              "boundingBox": "283,823,232,32",
+              "text": "060538871459"
+            },
+            {
+              "boundingBox": "537,826,17,29",
+              "text": "F"
+            }
+          ]
+        },
+        {
+          "boundingBox": "654,896,75,29",
+          "words": [
+            {
+              "boundingBox": "654,896,75,29",
+              "text": "0.26"
+            }
+          ]
+        },
+        {
+          "boundingBox": "635,930,94,30",
+          "words": [
+            {
+              "boundingBox": "635,930,94,30",
+              "text": "46.30"
+            }
+          ]
+        },
+        {
+          "boundingBox": "634,965,95,30",
+          "words": [
+            {
+              "boundingBox": "634,965,95,30",
+              "text": "46.30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "27,398,267,770",
+      "lines": [
+        {
+          "boundingBox": "34,398,95,29",
+          "words": [
+            {
+              "boundingBox": "34,398,95,29",
+              "text": "BREAD"
+            }
+          ]
+        },
+        {
+          "boundingBox": "34,432,94,31",
+          "words": [
+            {
+              "boundingBox": "34,432,94,31",
+              "text": "BRERD"
+            }
+          ]
+        },
+        {
+          "boundingBox": "30,751,134,30",
+          "words": [
+            {
+              "boundingBox": "30,751,134,30",
+              "text": "FOLGERS"
+            }
+          ]
+        },
+        {
+          "boundingBox": "30,787,212,31",
+          "words": [
+            {
+              "boundingBox": "30,787,36,29",
+              "text": "SC"
+            },
+            {
+              "boundingBox": "89,787,94,30",
+              "text": "TUIST"
+            },
+            {
+              "boundingBox": "205,788,37,30",
+              "text": "UP"
+            }
+          ]
+        },
+        {
+          "boundingBox": "29,821,76,30",
+          "words": [
+            {
+              "boundingBox": "29,821,76,30",
+              "text": "EGGS"
+            }
+          ]
+        },
+        {
+          "boundingBox": "206,892,88,29",
+          "words": [
+            {
+              "boundingBox": "206,892,55,29",
+              "text": "TAX"
+            },
+            {
+              "boundingBox": "285,892,9,29",
+              "text": "1"
+            }
+          ]
+        },
+        {
+          "boundingBox": "27,1102,174,31",
+          "words": [
+            {
+              "boundingBox": "27,1102,56,30",
+              "text": "EFT"
+            },
+            {
+              "boundingBox": "106,1103,95,30",
+              "text": "DEBIT"
+            }
+          ]
+        },
+        {
+          "boundingBox": "27,1138,134,30",
+          "words": [
+            {
+              "boundingBox": "27,1138,134,30",
+              "text": "RCCOUNT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "638,404,136,453",
+      "lines": [
+        {
+          "boundingBox": "659,404,115,30",
+          "words": [
+            {
+              "boundingBox": "659,404,75,30",
+              "text": "2.88"
+            },
+            {
+              "boundingBox": "757,405,17,29",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "659,439,114,31",
+          "words": [
+            {
+              "boundingBox": "659,439,75,30",
+              "text": "2,88"
+            },
+            {
+              "boundingBox": "756,439,17,31",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "659,474,114,31",
+          "words": [
+            {
+              "boundingBox": "659,474,75,31",
+              "text": "3.84"
+            },
+            {
+              "boundingBox": "756,474,17,30",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "658,509,115,31",
+          "words": [
+            {
+              "boundingBox": "658,509,75,30",
+              "text": "3.84"
+            },
+            {
+              "boundingBox": "756,510,17,30",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "658,544,114,30",
+          "words": [
+            {
+              "boundingBox": "658,544,75,30",
+              "text": "3.84"
+            },
+            {
+              "boundingBox": "755,545,17,29",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "657,579,115,31",
+          "words": [
+            {
+              "boundingBox": "657,579,76,30",
+              "text": "3.84"
+            },
+            {
+              "boundingBox": "755,580,17,30",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "696,615,76,30",
+          "words": [
+            {
+              "boundingBox": "696,615,36,30",
+              "text": "98"
+            },
+            {
+              "boundingBox": "755,615,17,30",
+              "text": "0"
+            }
+          ]
+        },
+        {
+          "boundingBox": "696,650,75,31",
+          "words": [
+            {
+              "boundingBox": "696,650,36,30",
+              "text": "98"
+            },
+            {
+              "boundingBox": "754,651,17,30",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "658,685,113,31",
+          "words": [
+            {
+              "boundingBox": "658,685,74,31",
+              "text": "1.98"
+            },
+            {
+              "boundingBox": "754,686,17,30",
+              "text": "N"
+            }
+          ]
+        },
+        {
+          "boundingBox": "656,721,115,31",
+          "words": [
+            {
+              "boundingBox": "656,721,75,31",
+              "text": "2.78"
+            },
+            {
+              "boundingBox": "754,721,17,31",
+              "text": "x"
+            }
+          ]
+        },
+        {
+          "boundingBox": "638,756,48,30",
+          "words": [
+            {
+              "boundingBox": "638,756,48,30",
+              "text": "10."
+            }
+          ]
+        },
+        {
+          "boundingBox": "655,792,114,31",
+          "words": [
+            {
+              "boundingBox": "655,792,76,31",
+              "text": "0.84"
+            },
+            {
+              "boundingBox": "753,793,16,30",
+              "text": "x"
+            }
+          ]
+        },
+        {
+          "boundingBox": "657,827,112,30",
+          "words": [
+            {
+              "boundingBox": "657,827,73,30",
+              "text": "1.88"
+            },
+            {
+              "boundingBox": "752,828,17,29",
+              "text": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "322,859,328,312",
+      "lines": [
+        {
+          "boundingBox": "381,859,154,31",
+          "words": [
+            {
+              "boundingBox": "381,859,154,31",
+              "text": "SUBTOTAL"
+            }
+          ]
+        },
+        {
+          "boundingBox": "362,893,94,30",
+          "words": [
+            {
+              "boundingBox": "362,893,94,30",
+              "text": "7.000"
+            }
+          ]
+        },
+        {
+          "boundingBox": "439,928,95,30",
+          "words": [
+            {
+              "boundingBox": "439,928,95,30",
+              "text": "TOT9L"
+            }
+          ]
+        },
+        {
+          "boundingBox": "322,962,212,32",
+          "words": [
+            {
+              "boundingBox": "322,962,95,31",
+              "text": "DEBIT"
+            },
+            {
+              "boundingBox": "458,964,76,30",
+              "text": "TEND"
+            }
+          ]
+        },
+        {
+          "boundingBox": "341,997,192,32",
+          "words": [
+            {
+              "boundingBox": "341,997,114,32",
+              "text": "CHRNGE"
+            },
+            {
+              "boundingBox": "477,999,56,30",
+              "text": "DUE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "340,1104,310,33",
+          "words": [
+            {
+              "boundingBox": "340,1104,56,31",
+              "text": "PRY"
+            },
+            {
+              "boundingBox": "418,1106,76,30",
+              "text": "FROM"
+            },
+            {
+              "boundingBox": "516,1106,134,31",
+              "text": "PRIM9RY"
+            }
+          ]
+        },
+        {
+          "boundingBox": "457,1140,75,31",
+          "words": [
+            {
+              "boundingBox": "457,1140,75,31",
+              "text": "5259"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "27,1173,700,104",
+      "lines": [
+        {
+          "boundingBox": "86,1173,407,33",
+          "words": [
+            {
+              "boundingBox": "86,1173,94,30",
+              "text": "46.30"
+            },
+            {
+              "boundingBox": "223,1174,94,30",
+              "text": "TOTAL"
+            },
+            {
+              "boundingBox": "340,1175,153,31",
+              "text": "PURCHRSE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "27,1209,700,34",
+          "words": [
+            {
+              "boundingBox": "27,1209,134,30",
+              "text": "PRYMENT"
+            },
+            {
+              "boundingBox": "183,1209,154,31",
+              "text": "DECLINED"
+            },
+            {
+              "boundingBox": "359,1210,95,32",
+              "text": "DEBIT"
+            },
+            {
+              "boundingBox": "476,1212,56,30",
+              "text": "NOT"
+            },
+            {
+              "boundingBox": "554,1213,173,30",
+              "text": "RVRILRBLE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "204,1245,146,31",
+          "words": [
+            {
+              "boundingBox": "204,1245,146,31",
+              "text": "11/06/11"
+            }
+          ]
+        },
+        {
+          "boundingBox": "437,1247,88,30",
+          "words": [
+            {
+              "boundingBox": "437,1247,88,30",
+              "text": "02:21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "25,1314,174,65",
+      "lines": [
+        {
+          "boundingBox": "26,1314,173,30",
+          "words": [
+            {
+              "boundingBox": "26,1314,56,29",
+              "text": "EFT"
+            },
+            {
+              "boundingBox": "104,1315,95,29",
+              "text": "DEBIT"
+            }
+          ]
+        },
+        {
+          "boundingBox": "25,1348,134,31",
+          "words": [
+            {
+              "boundingBox": "25,1348,134,31",
+              "text": "ACCOUNT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "338,1316,310,66",
+      "lines": [
+        {
+          "boundingBox": "338,1316,310,32",
+          "words": [
+            {
+              "boundingBox": "338,1316,56,30",
+              "text": "PRY"
+            },
+            {
+              "boundingBox": "416,1317,76,30",
+              "text": "FROM"
+            },
+            {
+              "boundingBox": "514,1318,134,30",
+              "text": "PRIMARY"
+            }
+          ]
+        },
+        {
+          "boundingBox": "455,1352,76,30",
+          "words": [
+            {
+              "boundingBox": "455,1352,76,30",
+              "text": "5259"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "25,1384,712,513",
+      "lines": [
+        {
+          "boundingBox": "84,1384,407,33",
+          "words": [
+            {
+              "boundingBox": "84,1384,95,30",
+              "text": "46.30"
+            },
+            {
+              "boundingBox": "221,1385,95,30",
+              "text": "TOTRL"
+            },
+            {
+              "boundingBox": "338,1386,153,31",
+              "text": "PURCHRSE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "25,1419,350,32",
+          "words": [
+            {
+              "boundingBox": "25,1419,57,29",
+              "text": "REF"
+            },
+            {
+              "boundingBox": "145,1420,230,31",
+              "text": "131000195280"
+            }
+          ]
+        },
+        {
+          "boundingBox": "25,1454,642,33",
+          "words": [
+            {
+              "boundingBox": "25,1454,134,29",
+              "text": "NETUORK"
+            },
+            {
+              "boundingBox": "183,1455,48,30",
+              "text": "ID."
+            },
+            {
+              "boundingBox": "259,1455,70,30",
+              "text": "0071"
+            },
+            {
+              "boundingBox": "357,1456,76,30",
+              "text": "RPPR"
+            },
+            {
+              "boundingBox": "455,1457,75,30",
+              "text": "CODE"
+            },
+            {
+              "boundingBox": "552,1457,115,30",
+              "text": "297664"
+            }
+          ]
+        },
+        {
+          "boundingBox": "202,1490,146,31",
+          "words": [
+            {
+              "boundingBox": "202,1490,146,31",
+              "text": "11/06/11"
+            }
+          ]
+        },
+        {
+          "boundingBox": "435,1492,153,30",
+          "words": [
+            {
+              "boundingBox": "435,1492,36,30",
+              "text": "02"
+            },
+            {
+              "boundingBox": "480,1500,5,19",
+              "text": ":"
+            },
+            {
+              "boundingBox": "493,1492,95,30",
+              "text": "22:54"
+            }
+          ]
+        },
+        {
+          "boundingBox": "102,1561,580,61",
+          "words": [
+            {
+              "boundingBox": "102,1561,33,57",
+              "text": "#"
+            },
+            {
+              "boundingBox": "183,1561,187,59",
+              "text": "ITEMS"
+            },
+            {
+              "boundingBox": "414,1563,151,58",
+              "text": "SOLD"
+            },
+            {
+              "boundingBox": "613,1564,69,58",
+              "text": "13"
+            }
+          ]
+        },
+        {
+          "boundingBox": "102,1660,544,33",
+          "words": [
+            {
+              "boundingBox": "102,1660,56,30",
+              "text": "TCI"
+            },
+            {
+              "boundingBox": "180,1661,75,29",
+              "text": "0432"
+            },
+            {
+              "boundingBox": "278,1661,69,30",
+              "text": "2121"
+            },
+            {
+              "boundingBox": "377,1663,73,29",
+              "text": "1542"
+            },
+            {
+              "boundingBox": "473,1663,69,30",
+              "text": "2401"
+            },
+            {
+              "boundingBox": "570,1663,76,30",
+              "text": "9590"
+            }
+          ]
+        },
+        {
+          "boundingBox": "81,1796,617,35",
+          "words": [
+            {
+              "boundingBox": "81,1796,134,31",
+              "text": "Lagaway"
+            },
+            {
+              "boundingBox": "240,1800,34,27",
+              "text": "is"
+            },
+            {
+              "boundingBox": "296,1798,75,29",
+              "text": "back"
+            },
+            {
+              "boundingBox": "394,1798,56,30",
+              "text": "for"
+            },
+            {
+              "boundingBox": "472,1798,226,33",
+              "text": "Electronics,"
+            }
+          ]
+        },
+        {
+          "boundingBox": "42,1830,695,34",
+          "words": [
+            {
+              "boundingBox": "42,1830,89,31",
+              "text": "Togs,"
+            },
+            {
+              "boundingBox": "159,1831,56,29",
+              "text": "and"
+            },
+            {
+              "boundingBox": "237,1832,148,32",
+              "text": "Jewelry."
+            },
+            {
+              "boundingBox": "415,1833,322,31",
+              "text": "10/17/11-12/16/11"
+            }
+          ]
+        },
+        {
+          "boundingBox": "180,1866,146,31",
+          "words": [
+            {
+              "boundingBox": "180,1866,146,31",
+              "text": "11/06/11"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

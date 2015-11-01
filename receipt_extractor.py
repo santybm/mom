@@ -6,14 +6,14 @@ import re
 
 excludeSTR = ['rd', 'ave', 'drive', 'ma', 'boston', 'blvd', 'road', 'avenue', 'dr.', 'credit', 'debit', 'st', 'street']
 
-def getText():
-    fo = open("rawdemo.txt", "r+")
+def getText(fileName):
+    fo = open(fileName, "r+")
     str = fo.read();
     fo.close()
     return str
 
-def textToJSON():
-    j = json.loads(getText())
+def textToJSON(fileName):
+    j = json.loads(getText(fileName))
 
     texts = []
 
@@ -44,4 +44,5 @@ def wordOrNum(text):
         return 0 # number
     else:
         return 1 # word
-textToJSON()
+textToJSON("r1.txt")
+textToJSON("r2.txt")

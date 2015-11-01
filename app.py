@@ -76,6 +76,21 @@ def getCart():
         except Exception as exp:
             return exp.message
         cart = currentUser.shoppingCart
+        itemsAr = []
+        cell = {}
+        for item in cart.cartItems:
+            itm = process_item.getItemById(item)
+            cell[0] = itm.Price
+            cell[1] = itm.Name
+            cell[3] = itm.Description
+            cell[2] = itm.Store.Name
+            itemsAr.append(cell)
+
+        return render_template("groceryList.html", itemsAr=itemsAr)
+
+
+
+
 
 
 

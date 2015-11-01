@@ -535,6 +535,10 @@ body {
     height: 34px;
 }
 
+.form-upload {    
+    display: inline;
+}
+
 #page-top {
     overflow-y: auto;
     overflow-x: hidden;

@@ -9,6 +9,7 @@ import process_user
 import process_store
 import process_item
 from process_store import Store
+from business.Store import *
 
 
 
@@ -64,13 +65,15 @@ def addCart():
 @app.route('/store')
 def addStore():
 
-    savedStore = process_store.saveStore(Name="Trader Joe's", Description="Basic hoe's shop at these Joes", LocationLat=12, LocationLon= -34, Type="")
+    savedStore = process_store.saveStore(Name="Nike", Description="Basic hoe's shop at these Joes", LocationLat=12, LocationLon= -34, Type="")
 
     return savedStore.objectId
 @app.route('/item')
 def addItem():
-    homeStore = Store.Query.get(Name= "Trader Joe's")
-    id = process_item.saveItem(Name="Tequila", Description="How bad bitches drown their sorrows", Store=homeStore, Price = 10)
+
+    homeStore = process_store.getStore("Nike")
+    id = process_item.saveItem(name="Tequila", description="How bad bitches drown their sorrows", price = 10, store=homeStore)
+
     return id
 
 

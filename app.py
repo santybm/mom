@@ -3,17 +3,19 @@ app = Flask(__name__)
 
 import settings_local
 from parse_rest.connection import *
-from parse_rest.user import User
 from parse_rest.datatypes import GeoPoint
 import process_user
 import process_store
 import process_item
-from process_store import Store
-from business.Store import *
+
+from business.Item import *
+from business.ShoppingCart import *
 
 
 
 register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY)
+
+currentUser = None
 
 
 @app.route('/')
@@ -25,17 +27,18 @@ def hello():
 
 @app.route('/register')
 def uregister():
-    username = "demo7"
+    username = "demo77"
     password = "abcd123"
     u = process_user.signup(username, password)
-    session['token'] = u.session_header()['X-Parse-Session-Token']
-
-    return u.username
+    if u != 'User Already Exists':
+        session['token'] = u.session_header()['X-Parse-Session-Token']
+        return u.username
+    return "Can not register user"
 
 
 @app.route('/login')
 def ulogin():
-    username = 'demo'
+    username = 'demo6'
     password = "abcd123"
     u = process_user.login(username, password)
     session['token'] = u.session_header()['X-Parse-Session-Token']
@@ -54,10 +57,22 @@ def ulogout():
 
 @app.route('/addToCart')
 def addCart():
+    itemToAdd = getItem("Slim Milk")
 
     #Is user logged in?
-    if session['token']:
+    if 'token' in session and session['token'] is not None:
+        register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY, session_token=session['token'])
+        try:
+            currentUser = process_user.User.current_user()
+            #currentUser = process_user.User.Query.get(objectID=currentUser)
+        except Exception as exp:
+            return exp.message
+        cart = currentUser.shoppingCart
+        addItemtoCart(cart, itemToAdd)
+
+
         return "User Logged in"
+
     else:
         return "Not logged in"
 

@@ -35,14 +35,14 @@
 </head>
 
 <body id="page-top">
-
-    <header>
+    
+    <div class="header header-login">
         <div class="header-content">
             <div class="header-content-inner">
                 <h2>Find the right price for groceries even when your mom doesn't pick up.</h2>
                 <hr>
+                <h2 id="signInText" class="form-login-heading" style="font-size:20px; line-height:50px"> Please sign in.</h2>
                 <form class="form-login">
-                    <h2 class="form-login-heading" style="font-size:20px; line-height:50px"> Please sign in</h2>
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                     <label for="inputPassword" class="sr-only">Email address</label>
@@ -54,11 +54,44 @@
                         Remember me
                     </label>
                 </div>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Sign In</a>
+                <div class="btn-group" role="group" aria-label="...">
+                    <a href="../templates/search.html" class="btn btn-primary btn-xl page-scroll" style="margin-right:5px">Sign In</a>
+                    <a href="#registration" class="btn btn-primary btn-xl page-scroll">Register</a>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
+    
+    <section class="bg-primary" id="registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Start saving!</h2>
+                    <hr class="light">
+                    <form class="form-register">
+                        <label for="firstName" class="sr-only">First Name</label>
+                        <input type="firstName" id="firstName" class="form-control" placeholder="First name" required autofocus>
+                        <label for="lastName" class="sr-only">Last Name</label>
+                        <input type="lastName" id="lastName" class="form-control" placeholder="Last name" required autofocus>
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <label for="inputPassword" class="sr-only">Email address</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required autofocus>
+                    </form>
+                    <a onclick="postRegistration()" id="submit" href="#page-top" class="btn btn-default btn-xl page-scroll">Submit</a>
+                    <script>
+                        function postRegistration() {
+    document.getElementById("signInText").innerHTML = "Thank you for registering. Please sign in.";
+};               </script>
+                </div>
+            </div>
+        </div>
+    </section>
 
+</body>
+    
+<footer>
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -72,7 +105,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-
-</body>
+    
+</footer>
 
 </html>

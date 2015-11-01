@@ -45,4 +45,4 @@ def wordOrNum(text):
     else:
         return 1 # word
 textToJSON("r1.txt")
-textToJSON("r2.txt")
+textToJSON("r2.txt")    

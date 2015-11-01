@@ -55,14 +55,24 @@ def ulogout():
 
 @app.route('/addToCart')
 def addCart():
+
+    from business.Item import getItem
+    itemToAdd = getItem("Slim Milk")
+
     #Is user logged in?
     if 'token' in session and session['token'] is not None:
         register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY, session_token=session['token'])
         try:
             currentUser = process_user.User.current_user()
-            
         except Exception as exp:
             return exp.message
+
+        ### POST - add item to cart ###
+        if currentUser.shoppingCart is not None:
+            print "y"
+        else:
+            ## create new shopping cart and add item
+            pass
 
         return "User Logged in"
 

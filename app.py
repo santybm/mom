@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template, request
+from flask import Flask, session, render_template, url_for, redirect
 app = Flask(__name__)
 
 import settings_local
@@ -50,7 +50,7 @@ def ulogin():
         u = process_user.login(username, password)
         if u != 'Error: User login failed':
             session['token'] = u.session_header()['X-Parse-Session-Token']
-            return redirect("search.html")
+            return render_template("search.html")
         else:
             return u
     else:
@@ -65,7 +65,7 @@ def ulogout():
 
 ### GROCERY CART ###
 
-@app.route('listPage')
+@app.route('/listPage')
 def getCart():
     #Is user logged in?
     if 'token' in session and session['token'] is not None:
@@ -76,6 +76,8 @@ def getCart():
         except Exception as exp:
             return exp.message
         cart = currentUser.shoppingCart
+
+
 
 @app.route('/addToCart')
 def addCart():

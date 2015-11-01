@@ -538,8 +538,24 @@ body {
 .form-upload .form-control .file-caption {
     max-width: 300px;
 }
+
 .form-upload {    
     display:inline;
+}
+
+.form-register{
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-register .form-control {
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 #page-top {

@@ -13,4 +13,12 @@ def addItemtoCart(cart, Item):
     c.save()
     return c
 
+def removeItemFromCart(cart, Item):
+    c = ShoppingCart.Query.get(objectId=cart.objectId)
+    for item in c.cartItems:
+        if item == Item.objectId:
+            c.cartItems.remove(item)
+
+    c.save()
+    return "successful"
 

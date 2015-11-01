@@ -91,7 +91,11 @@ def addItem():
 
     return id
 
-
+@app.route('/removeitemCart')
+def rmCartItem():
+    cart = currentUser.shoppingCart
+    itemToAdd = getItem("Slim Milk")
+    removeItemFromCart(cart, item)
 
 if __name__ == '__main__':
     app.secret_key = 'A0Z=-(0a-/dfhg$%##@ew4rfwc[}{}>#@$>:SKF$%!'

@@ -354,6 +354,7 @@ header .header-content .header-content-inner p {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    margin-right: 10px;
 }
 
 .btn-default:hover,

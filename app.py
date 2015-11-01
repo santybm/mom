@@ -3,11 +3,12 @@ app = Flask(__name__)
 
 import settings_local
 from parse_rest.connection import *
-from parse_rest.user import User
 import process_user
 
 
 register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY)
+
+currentUser = None
 
 
 @app.route('/')
@@ -22,14 +23,15 @@ def uregister():
     username = "demo5"
     password = "abcd123"
     u = process_user.signup(username, password)
-    session['token'] = u.session_header()['X-Parse-Session-Token']
-
-    return u.username
+    if u != 'User Already Exists':
+        session['token'] = u.session_header()['X-Parse-Session-Token']
+        return u.username
+    return "Can not register user"
 
 
 @app.route('/login')
 def ulogin():
-    username = 'demo'
+    username = 'demo5'
     password = "abcd123"
     u = process_user.login(username, password)
     session['token'] = u.session_header()['X-Parse-Session-Token']
@@ -48,10 +50,17 @@ def ulogout():
 
 @app.route('/addToCart')
 def addCart():
-
     #Is user logged in?
-    if session['token']:
+    if 'token' in session and session['token'] is not None:
+        register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY, session_token=session['token'])
+        try:
+            currentUser = process_user.User.current_user()
+            
+        except Exception as exp:
+            return exp.message
+
         return "User Logged in"
+
     else:
         return "Not logged in"
 

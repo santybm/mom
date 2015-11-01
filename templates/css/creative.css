@@ -535,8 +535,11 @@ body {
     height: 34px;
 }
 
+.form-upload .form-control .file-caption {
+    max-width: 300px;
+}
 .form-upload {    
-    display: inline;
+    display:inline;
 }
 
 #page-top {

@@ -9,7 +9,9 @@ def createCart(firstItem):
 
 def addItemtoCart(cart, Item):
     c = ShoppingCart.Query.get(objectId=cart.objectId)
-    c.cartItems.append(Item.objectId)
+    lis = c.cartItems
+    lis.append(Item.objectId)
+    c.cartItems = lis
     c.save()
     return c
 

@@ -50,14 +50,22 @@
             <div class="header-content-inner text-center">
                 <h1 >Grocery List</h1>
                 <br />
-                <a href="#about" class="btn btn-primary btn-xl page-scroll"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a> 
-				
-				<a href="#about" class="btn btn-primary btn-xl page-scroll"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
+                <a onclick="additemFRM()" href="" id="addfield" class="btn btn-primary btn-xl page-scroll"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 				<br />
 				<br />
             </div>
         </div>
     </header>
+
+    <script>
+        function additemFRM() {
+            var person = prompt("Please enter the item name", "");
+
+            if (person != null) {
+                document.getElementById("addfield").href = "/addToCart?id=" + person;
+            }
+        }
+    </script>
 
     <section class="bg-primary" id="about">
         <div class="container">
@@ -66,7 +74,7 @@
 					<div class="col-md-4" style="text-align: right;">
 						
 							<div>
-								{{ item[0] }} <a href="/removeItem?id={{itemcartID}}" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+								${{ item[0] }} <a href="/removeItem?id={{ item[4] }}" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
 							</div>
 					</div>
                 	<div class="col-md-8">

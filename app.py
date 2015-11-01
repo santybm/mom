@@ -79,11 +79,13 @@ def getCart():
         itemsAr = []
         cell = {}
         for item in cart.cartItems:
+            cell = {}
             itm = process_item.getItemById(item)
             cell[0] = itm.Price
             cell[1] = itm.Name
             cell[3] = itm.Description
             cell[2] = itm.Store.Name
+            cell[4] = itm.objectId
             itemsAr.append(cell)
 
         return render_template("groceryList.html", itemsAr=itemsAr)
@@ -96,7 +98,8 @@ def getCart():
 
 @app.route('/addToCart')
 def addCart():
-    itemToAdd = getItem("Slim Milk")
+    itmName = request.args.get('id')
+    itemToAdd = process_item.getItemByName(itmName).get()
 
     #Is user logged in?
     if 'token' in session and session['token'] is not None:
@@ -110,10 +113,10 @@ def addCart():
         addItemtoCart(cart, itemToAdd)
 
 
-        return "User Logged in"
+        return redirect('/listPage')
 
     else:
-        return "Not logged in"
+        return "Error"
 
 
 @app.route('/store')
@@ -132,12 +135,21 @@ def addItem():
         print es
     return id.objectId
 
-@app.route('/removeitemCart')
+@app.route('/removeItem')
 def rmCartItem():
-    cart = currentUser.shoppingCart
-    item = process_item.getItemByName("Slim Milk").get()
-    removeItemFromCart(cart, item.get())
-    return "done"
+     #Is user logged in?
+    if 'token' in session and session['token'] is not None:
+        register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY, session_token=session['token'])
+        try:
+            currentUser = process_user.User.current_user()
+            #currentUser = process_user.User.Query.get(objectID=currentUser)
+        except Exception as exp:
+            return exp.message
+        cart = currentUser.shoppingCart
+        itmOID = request.args.get('id')
+        item = process_item.getItemById(itmOID)
+        removeItemFromCart(cart, item)
+        return redirect('/listPage')
 
 @app.route('/searchClosest')
 def searchItem():

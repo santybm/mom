@@ -1,6 +1,6 @@
 from parse_rest.user import User
 import settings_local
-
+from business.ShoppingCart import ShoppingCart
 from parse_rest.connection import *
 register(settings_local.APPLICATION_ID, settings_local.REST_API_KEY)
 
